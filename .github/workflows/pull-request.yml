@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: ⬇ Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v1.6.0
+        uses: dependabot/fetch-metadata@v2.4.0
         with:
           github-token: '${{ secrets.GITHUB_TOKEN }}'
 
@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🏷️ Labeler
-        uses: actions/labeler@v4
+        uses: actions/labeler@v6
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           sync-labels: true
